@@ -1,0 +1,228 @@
+[2024-09-17 22:09:45,670] 683 google.auth._default - WARNING - No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable
+[2024-09-17 22:09:56,334] 293 langchain_core.callbacks.manager - WARNING - Error in StdOutCallbackHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+[2024-09-17 22:09:56,334] 293 langchain_core.callbacks.manager - WARNING - Error in StdOutCallbackHandler.on_chain_start callback: AttributeError("'NoneType' object has no attribute 'get'")
+[2024-09-17 22:09:58,349] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:09:58,752] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:09:59,280] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:09:59,936] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:10:01,770] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:10:03,428] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:10:06,450] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:10:10,420] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+[2024-09-17 22:10:15,678] 109 grpc._plugin_wrapping - ERROR - AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x000001C54BF93E30>" raised exception!
+Traceback (most recent call last):
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\grpc\_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\grpc.py", line 81, in _get_authorization_headers
+    self._credentials.before_request(
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 228, in before_request
+    self._blocking_refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\credentials.py", line 191, in _blocking_refresh
+    self.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 235, in refresh
+    self._update_token(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\impersonated_credentials.py", line 251, in _update_token
+    self._source_credentials.refresh(request)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\credentials.py", line 431, in refresh
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\reauth.py", line 366, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+  File "C:\Users\Nidheesh PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\_client.py", line 68, in _handle_error_response
+    raise exceptions.RefreshError(
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
