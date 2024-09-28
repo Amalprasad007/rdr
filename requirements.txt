@@ -12,5 +12,6 @@ tzdata==2023.3
 huggingface_hub
 streamlit
 pandas
+python-decouple==3.8
 
 
