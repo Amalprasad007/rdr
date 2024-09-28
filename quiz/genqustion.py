@@ -8,8 +8,9 @@ import json
 import pandas as pd
 import requests
 import json
+from decouple import config
 
-API_KEY = "AIzaSyDph7kf_qrDEtTyKUza-WVJ5WWs65AMEnE"
+API_KEY = config("API_KEY")
 
 # Google Gemini API URL
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={API_KEY}"
