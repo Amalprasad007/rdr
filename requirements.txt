@@ -13,7 +13,6 @@ huggingface_hub
 streamlit
 pandas
 python-decouple==3.8
-whitenoise==6.2.0
 
 
 
